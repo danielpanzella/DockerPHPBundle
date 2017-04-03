@@ -1,0 +1,16 @@
+{
+    "name": "djp/docker-php-bundle",
+    "description": "A bundle for the Docker PHP SDK",
+    "type": "symfony-bundle",
+    "require": {
+        "docker-php/docker-php": "^1.24",
+        "php": ">=5.5.9"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Panzella",
+            "email": "daniel.panzella@gmail.com"
+        }
+    ]
+}
