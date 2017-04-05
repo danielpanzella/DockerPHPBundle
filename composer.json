@@ -12,5 +12,10 @@
             "name": "Daniel Panzella",
             "email": "daniel.panzella@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "DJP\\DockerPHPBundle\\": ""
+        }
+    }
 }

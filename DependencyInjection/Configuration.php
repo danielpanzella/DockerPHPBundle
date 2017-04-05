@@ -18,11 +18,14 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('djp_docker_php');
+        $rootNode = $treeBuilder->root('docker_php');
 
-        // Here you should define the parameters that are allowed to
-        // configure your bundle. See the documentation linked above for
-        // more information on that topic.
+        $rootNode
+            ->children()
+            ->scalarNode('remote_socket')->end()
+            ->scalarNode('ssl')->end()
+            ->scalarNode('local_cert')->end()
+            ->end();
 
         return $treeBuilder;
     }

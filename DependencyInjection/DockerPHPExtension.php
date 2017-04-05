@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * @link http://symfony.com/doc/current/cookbook/bundles/extension.html
  */
-class DJPDockerPHPExtension extends Extension
+class DockerPHPExtension extends Extension
 {
     /**
      * {@inheritdoc}
@@ -24,5 +24,7 @@ class DJPDockerPHPExtension extends Extension
 
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.xml');
+
+
     }
 }
